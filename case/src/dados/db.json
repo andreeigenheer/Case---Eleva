@@ -1,0 +1,22 @@
+{
+  "cadastros": [
+    {
+      "id": "1",
+      "escola": "Joaquim Ribeiro",
+      "turma": "3°A",
+      "data": "2020-11-04T16:30:10.710Z"
+    },
+    {
+      "id": "2",
+      "escola": "Batista Leme",
+      "turma": "1°C",
+      "data": "2020-11-04T21:24:10.710Z"
+    },
+    {
+      "id": "3",
+      "escola": "ITA",
+      "turma": "Delta",
+      "data": "2020-11-05T21:14:10.710Z"
+    }
+  ]
+}

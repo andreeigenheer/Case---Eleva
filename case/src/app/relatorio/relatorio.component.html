@@ -1,0 +1,24 @@
+<section class="container">
+  <h2 class="titulo">Cadastros</h2>
+<table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Escola</th>
+    <th class="tabela__cabecalho__conteudo">Turma</th>
+    <th class="tabela__cabecalho__conteudo">Data</th>
+  </thead>
+
+  <tbody *ngIf="cadastros?.length > 0; else relatorioVazio">
+    <tr class="tabela__linha" *ngFor="let cadastro of cadastros">
+      <td class="tabela__conteudo">{{ cadastro?.escola }}</td>
+      <td class="tabela__conteudo">{{ cadastro?.turma }}</td>
+      <td class="tabela__conteudo">{{ cadastro?.data | date: 'short' }}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #relatorioVazio>
+  <p>Nenhum Relatório para gerar</p>
+</ng-template>
+</section>
+
+
+
