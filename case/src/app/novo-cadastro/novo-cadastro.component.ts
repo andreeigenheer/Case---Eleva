@@ -19,7 +19,11 @@ export class NovoCadastroComponent implements OnInit {
   cadastrar() {
     console.log('Cadastro Adicionado');
 
-    const valorCadastro: Escola = { escola: this.escola };
+    const valorCadastro: Escola = {
+      escola: this.escola,
+      idEscola: '',
+      data: undefined
+    };
 
     this.service.adicionar(valorCadastro).subscribe(
       (resultado) => {
