@@ -1,0 +1,6 @@
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.csprojAssemblyReference.cache
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.AssemblyInfoInputs.cache
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.AssemblyInfo.cs
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.csproj.CoreCompileInputs.cache
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eigen\OneDrive\Área de Trabalho\Eleva\case-webApi\obj\Debug\netcoreapp3.1\case-webApi.MvcApplicationPartsAssemblyInfo.cache

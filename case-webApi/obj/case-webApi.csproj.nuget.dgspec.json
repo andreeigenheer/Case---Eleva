@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webapi\\case-webApi.csproj": {}
+    "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webApi\\case-webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webapi\\case-webApi.csproj": {
+    "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webApi\\case-webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webapi\\case-webApi.csproj",
+        "projectUniqueName": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webApi\\case-webApi.csproj",
         "projectName": "case-webApi",
-        "projectPath": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webapi\\case-webApi.csproj",
+        "projectPath": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webApi\\case-webApi.csproj",
         "packagesPath": "C:\\Users\\eigen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webapi\\obj\\",
+        "outputPath": "C:\\Users\\eigen\\OneDrive\\Área de Trabalho\\Eleva\\case-webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eigen\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net50"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net50": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -34,35 +34,48 @@
         }
       },
       "frameworks": {
-        "net50": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[3.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win7-x86": {
-          "#import": []
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     }
