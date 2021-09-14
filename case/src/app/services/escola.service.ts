@@ -1,12 +1,12 @@
 import { Observable } from 'rxjs';
-import { Cadastro } from './../models/cadastros.model';
+import { Escola } from '../models/escola.model';
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root',
 })
-export class CadastrosService {
+export class EscolaService {
   private relatorioCadastros: any[];
 
   //Aqui colocar o endereço a API, para ter as requisições da API
@@ -16,18 +16,18 @@ export class CadastrosService {
     this.relatorioCadastros = [];
   }
 
-  get cadastros() {
+  get escola() {
     return this.relatorioCadastros;
   }
 
   //Requisição GET para o endereço da API. Ele retorna é um Observable de algo
-  todas(){
-    return this.httpClient.get<Cadastro[]>(this.url);
+  todas(): Observable<Escola[]>{
+    return this.httpClient.get<Escola[]>(this.url);
   }
 
   adicionar(cadastro: any) {
     this.hidratar(cadastro);
-     return this.httpClient.post<Cadastro>(this.url, cadastro);
+     return this.httpClient.post<Escola>(this.url, cadastro);
   }
 
   private hidratar(cadastro: any) {

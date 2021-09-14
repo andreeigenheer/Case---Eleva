@@ -1,6 +1,6 @@
 import { AuthService } from './login/auth.service';
 import { Component } from '@angular/core';
-import { CadastrosService } from './services/cadastros.service';
+import { EscolaService } from './services/escola.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'case';
 
   mostrarMenu: boolean = false;
-constructor(private service: CadastrosService,
+constructor(private service: EscolaService,
             private authService:AuthService){}
 
 ngOnInit(){

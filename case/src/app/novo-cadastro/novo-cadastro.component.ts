@@ -1,6 +1,6 @@
-import { Cadastro } from './../models/cadastros.model';
+import { Escola } from '../models/escola.model';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { CadastrosService } from '../services/cadastros.service';
+import { EscolaService } from '../services/escola.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,12 +14,12 @@ export class NovoCadastroComponent implements OnInit {
   escola: string;
   turma: string;
 
-  constructor(private service: CadastrosService, private router: Router) {}
+  constructor(private service: EscolaService, private router: Router) {}
 
   cadastrar() {
     console.log('Cadastro Adicionado');
 
-    const valorCadastro: Cadastro = { escola: this.escola, turma: this.turma };
+    const valorCadastro: Escola = { escola: this.escola };
 
     this.service.adicionar(valorCadastro).subscribe(
       (resultado) => {

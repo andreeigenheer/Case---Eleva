@@ -1,6 +1,6 @@
-import { Cadastro } from './../models/cadastros.model';
+import { Escola } from '../models/escola.model';
 import { Component, Input, OnInit } from '@angular/core';
-import { CadastrosService } from '../services/cadastros.service';
+import { EscolaService } from '../services/escola.service';
 
 @Component({
   selector: 'app-relatorio',
@@ -10,10 +10,10 @@ import { CadastrosService } from '../services/cadastros.service';
 export class RelatorioComponent implements OnInit {
   cadastros: any[];
 
-  constructor(private service: CadastrosService) {}
+  constructor(private service: EscolaService) {}
 
   ngOnInit(): void {
-    this.service.todas().subscribe((cadastros: Cadastro[]) => {
+    this.service.todas().subscribe((cadastros: Escola[]) => {
       console.table(cadastros);
       this.cadastros = cadastros;
     });
