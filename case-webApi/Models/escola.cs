@@ -4,17 +4,17 @@ namespace case_webApi.Models
 
         public escola()  { }
         
-        public escola(int id, string escola, string data) 
+        public escola(int id, string nome, string data) 
         {
             this.idEscola = idEscola;
-            this.escola = escola;
+            this.nome = nome;
             this.data = data;
                
         }
 
         public int idEscola { get; set; }
   
-        public string escola { get; set; }
+        public string nome { get; set; }
   
         public string data { get; set; }  
   

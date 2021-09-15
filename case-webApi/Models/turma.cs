@@ -4,18 +4,18 @@ namespace case_webApi.Models
 
         public turma()  { }
         
-        public turma(int id, string turma, string data) 
+        public turma(int id, string nome, string data) 
         {
             this.id = id;
-            this.turma = turma;
+            this.nome = nome;
             this.data = data;
-            this.idEscola = idEscola
+            this.idEscola = idEscola;
                
         }
 
         public int id { get; set; }
   
-        public string turma { get; set; }
+        public string nome { get; set; }
   
         public string data { get; set; }  
 

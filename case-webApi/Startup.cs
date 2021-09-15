@@ -11,6 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using  case_webApi.Data;
+using Microsoft.EntityFrameworkCore;
+
+     
+
 
 namespace case_webApi
 {
@@ -26,8 +31,8 @@ namespace case_webApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddContext<DataContext>(
-                x =>x.useSqlite(configuration.GetConnectionString("Default"))
+            services.AddDbContext<DataContext>(
+                x =>x.UseSqlite(Configuration.GetConnectionString("Default"))
             );
 
             services.AddControllers();

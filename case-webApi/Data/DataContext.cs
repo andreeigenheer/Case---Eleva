@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using case_webApi.Models;
-{
-     
-}
+
+   
 
 namespace case_webApi.Data
 {
@@ -12,17 +11,17 @@ namespace case_webApi.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base (options) { }
 
-        public Dbset<escola> Escola { get; set; }
+        public DbSet<escola> Escola { get; set; }
 
-        public Dbset<turma> Turma { get; set;}
+        public DbSet<turma> Turma { get; set;}
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<escola>()
             .HasKey(AD => new {AD.idEscola});
 
-            builder.Entity<Turma>()
-            .HasData(new List<Turma>(){
+            builder.Entity<turma>()
+            .HasData(new List<turma>(){
 
             });
         }
