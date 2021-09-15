@@ -12,6 +12,7 @@ export class EscolaService {
   //Aqui colocar o endereço a API, para ter as requisições da API
   private url = 'http://localhost:3000/cadastros';
 
+  //A HttpClient é quem faz as requisições para a API Rest
   constructor(private httpClient: HttpClient) {
     this.relatorioCadastros = [];
   }

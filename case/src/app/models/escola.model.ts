@@ -1,6 +1,6 @@
 export interface Escola {
   idEscola: string;
-  nome: string;
+  escola: string;
   data: Date;
 
 }
