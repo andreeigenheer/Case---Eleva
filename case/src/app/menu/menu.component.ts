@@ -9,6 +9,10 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
+  alterar(){
+    console.log("Alterou")
+  }
+
   ngOnInit(): void {
   }
 
