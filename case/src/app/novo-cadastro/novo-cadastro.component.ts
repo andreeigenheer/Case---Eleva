@@ -21,7 +21,8 @@ export class NovoCadastroComponent implements OnInit {
 
     const valorCadastro: Escola = {
       escola: this.escola,
-      idEscola: '',
+      turma: this.turma,
+      id: '',
       data: undefined
     };
 

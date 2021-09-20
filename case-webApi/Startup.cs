@@ -36,6 +36,8 @@ namespace case_webApi
             );
 
             services.AddControllers();
+            services.AddScoped<IRepository, Repository>();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "case_webApi", Version = "v1" });

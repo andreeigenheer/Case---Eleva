@@ -1,3 +1,4 @@
+using case_webApi.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace case_webApi.Controllers
@@ -7,6 +8,14 @@ namespace case_webApi.Controllers
 
     public class EscolaController : ControllerBase
     {
+
+      public EscolaController(IRepository repo)
+      {
+            
+        }
+
+        public IRepository Repo { get; }
+
         [HttpGet]
         public IActionResult Get(){
 

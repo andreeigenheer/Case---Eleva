@@ -11,6 +11,9 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { AlterarComponent } from './alterar/alterar.component';
+import { RemoverComponent } from './remover/remover.component';
 
 
 registerLocaleData(localePt, 'pt');
@@ -20,7 +23,10 @@ registerLocaleData(localePt, 'pt');
     AppComponent,
     NovoCadastroComponent,
     RelatorioComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent,
+    AlterarComponent,
+    RemoverComponent
   ],
   imports: [
     BrowserModule,
